@@ -1,32 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Examen_MF0491</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/examen.js" defer></script>
+  </head>
+  <body>
     <header>
-        <h1>Examen MF0491</h1>
-        <h2>HTML, CSS, JS y AJAX</h2>
+      <h1>Examen MF0491</h1>
+      <h2>HTML, CSS, JS y AJAX</h2>
     </header>
     <main>
-        <section>
-            <div class="container">
-                <div class="left-col">
-                    <p></p>
-                </div>
-                <div class="right-col">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
+      <section>
+        <div class="container">
+          <div class="left-col">
+            <ul>
+              <li><a id="saludo-btn" class="btn-normal">Dí "Hola Mundo"</a></li>
+              <li>
+                <a id="toggleButton" class="btn-normal"
+                  >Mostrar / ocultar actores</a
+                >
+              </li>
+              <li>
+                <a id="loadCountries" class="btn-normal">Listado de Paises</a>
+              </li>
+              <li><a href="">Item 3</a></li>
+              <li><a href="">Item 4</a></li>
+            </ul>
+          </div>
+          <div class="right-col">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              imperdiet turpis at convallis imperdiet. Aliquam eu eros sit amet
+              lectus facilisis efficitur id luctus nibh. In commodo metus vitae
+              rhoncus placerat. Maecenas quis mi at quam dapibus mollis. Nulla
+              facilisi. Suspendisse interdum ligula turpis, nec sollicitudin
+              lorem venenatis at. Nam dui dolor, imperdiet id laoreet vel,
+              sodales dapibus lacus. Mauris pulvinar ullamcorper aliquam.
+              Integer nisl sapien, porttitor sit amet lorem ut, lacinia egestas
+              libero. Suspendisse egestas ex non ultricies feugiat. Phasellus
+              imperdiet nisi id sapien iaculis dictum. Sed finibus mauris
+              ligula, et feugiat arcu semper a. Maecenas euismod non enim vel
+              ornare. Aliquam imperdiet magna at magna vehicula cursus.
+            </p>
+            <form action="" method="post">
+              <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required />
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+            <!-- datos formulario-->
+            <div class="mostrar-datos"></div>
+            <!-- mostrar actores-->
+            <div class="actor_list" style="display: none">
+              <h3>Actores:</h3>
+              <ul class="actores_list">
+                <li>Humphrey Bogart</li>
+                <li>James Stewart</li>
+                <li>Marlon Brando</li>
+                <li>James Dean</li>
+              </ul>
             </div>
-        </section>
+            <div>
+              <h3>Lista de Paises:</h3>
+              <ul id="countryList" class="country_list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2025 - Examen MF0491 - Formacom</p>
+      <p>&copy; 2025 - Examen MF0491 - Formacom</p>
     </footer>
-</body>
+  </body>
 </html>
